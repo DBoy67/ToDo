@@ -11,13 +11,14 @@ public class ToDoMain {
 
     public static void main(String[] args) {
         int whatToDo = 0;
-        Scanner in = new Scanner(System.in);
+ //       Scanner in = new Scanner(System.in);
+        
 
         try {
             myToDoList.readFile();
         } catch (IOException ex) {
-            System.out.println("Can't find a startfile. Creating a new one.");
-            System.out.println(" ");
+  //          System.out.println("Can't find a startfile. Creating a new one.");
+  //          System.out.println(" ");
 
             try {
                 myToDoList.createNewXML();
@@ -26,6 +27,9 @@ public class ToDoMain {
                 Logger.getLogger(ToDoMain.class.getName()).log(Level.SEVERE, null, ex1);
             }
         }
+        
+        ToDoForm tonys = new ToDoForm();
+        
 //        while (whatToDo != 7) {
 //            System.out.println("Welcome. What do you want to do?");
 //
