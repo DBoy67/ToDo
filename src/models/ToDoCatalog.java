@@ -4,8 +4,6 @@ import java.io.IOException;
 import java.util.Iterator;
 import java.util.List;
 
-import lexicon.XmlIO;
-
 public class ToDoCatalog {
 
     String toDoList = "myList.xml";
